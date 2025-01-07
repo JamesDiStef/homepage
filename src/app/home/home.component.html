@@ -1,15 +1,42 @@
-<div class="card bg-base-100 m-20 w-4/5 h-2/5 shadow-xl">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes"
-    />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
+<div class="h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+  <div class="ml-32 grid grid-cols-2 gap-12">
+    <div class="mt-10 col-span-2">
+      <app-link-card
+        [title]="'James DiStefano'"
+        [description]="
+          'Im a software engineer with five years of development experience, looking for my next role.'
+        "
+      />
+    </div>
+    <div>
+      <app-link-card
+        [title]="'Mammals of North America'"
+        [description]="
+          'Inspired by a gift my Dad gave me for Christmas, I am creating a database of mammals native to North America.  Angular, Express, MongoDB.  Try seraching American black bear in the search bar at the top of the page'
+        "
+        [link]="'https://jamesdistef.github.io/animals2/'"
+      />
+    </div>
+    <div>
+      <app-link-card
+        [title]="'Track your Reads'"
+        [description]="
+          'Another project I have been working on is a good reads clone built in Next JS.  Its not very far along, but you can check it out here'
+        "
+        [link]="'https://www.linkedin.com/in/james-distefano-b033aa154/'"
+      />
+    </div>
+    <div>
+      <app-link-card
+        [title]="'LinkedIn'"
+        [link]="'https://www.linkedin.com/in/james-distefano-b033aa154/'"
+      />
+    </div>
+    <div>
+      <app-link-card
+        [title]="'GitHub'"
+        [link]="'https://github.com/JamesDiStef'"
+      />
     </div>
   </div>
 </div>
