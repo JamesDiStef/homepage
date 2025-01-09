@@ -32,11 +32,11 @@
         [description]="
           'Another project I have been working on is a Goodreads clone built in Next.js. It’s not very far along, but you can check it out here.'
         "
-        [link]="'https://www.linkedin.com/in/james-distefano-b033aa154/'"
+        [link]="'https://github.com/JamesDiStef/about-me'"
       ></app-link-card>
     </div>
 
-    <div class="flex items-stretch lg:col-span-2 space-x-6">
+    <div class="hidden md:flex md:items-stretch lg:col-span-2 md:space-x-6">
       <app-link-card
         class="flex-1 w-full h-full"
         [title]="'Let\'s Connect on LinkedIn'"
@@ -48,6 +48,22 @@
         [title]="'Check out my GitHub'"
         [link]="'https://github.com/JamesDiStef'"
       ></app-link-card>
+    </div>
+
+    <div class="md:hidden w-full">
+      <button
+        href="https://www.linkedin.com/in/james-distefano-b033aa154/"
+        class="my-5 w-full btn btn-secondary"
+      >
+        LinkedIn
+      </button>
+
+      <button
+        href="'https://github.com/JamesDiStef'"
+        class="w-full btn btn-secondary"
+      >
+        GitHub
+      </button>
     </div>
   </div>
 </div>
