@@ -97,9 +97,32 @@
         color: inherit;
         text-decoration: inherit;
       }
+      button {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        text-transform: none;
+      }
+      button {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
       h2,
       p {
         margin: 0;
+      }
+      button {
+        cursor: pointer;
       }
       :root {
         background-color: var(--fallback-b1, oklch(var(--b1) / 1));
@@ -366,6 +389,9 @@
         .btn-primary {
           --btn-color: var(--fallback-p);
         }
+        .btn-secondary {
+          --btn-color: var(--fallback-s);
+        }
       }
       .btn:focus-visible {
         outline-style: solid;
@@ -381,6 +407,14 @@
         .btn-primary {
           --btn-color: var(--p);
         }
+        .btn-secondary {
+          --btn-color: var(--s);
+        }
+      }
+      .btn-secondary {
+        --tw-text-opacity: 1;
+        color: var(--fallback-sc, oklch(var(--sc) / var(--tw-text-opacity)));
+        outline-color: var(--fallback-s, oklch(var(--s) / 1));
       }
       .btn:disabled {
         --tw-border-opacity: 0;
@@ -422,6 +456,10 @@
         margin-left: auto;
         margin-right: auto;
       }
+      .my-5 {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+      }
       .mt-4 {
         margin-top: 1rem;
       }
@@ -430,6 +468,9 @@
       }
       .grid {
         display: grid;
+      }
+      .hidden {
+        display: none;
       }
       .h-1\/3 {
         height: 33.333333%;
@@ -461,11 +502,6 @@
       .gap-6 {
         gap: 1.5rem;
       }
-      .space-x-6 > :not([hidden]) ~ :not([hidden]) {
-        --tw-space-x-reverse: 0;
-        margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-        margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-      }
       .bg-base-100 {
         --tw-bg-opacity: 1;
         background-color: var(
@@ -495,6 +531,22 @@
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
           var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
       }
+      @media (min-width: 768px) {
+        .md\:flex {
+          display: flex;
+        }
+        .md\:hidden {
+          display: none;
+        }
+        .md\:items-stretch {
+          align-items: stretch;
+        }
+        .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+          --tw-space-x-reverse: 0;
+          margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+          margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+        }
+      }
       @media (min-width: 1024px) {
         .lg\:col-span-2 {
           grid-column: span 2 / span 2;
@@ -509,11 +561,11 @@
     </style>
     <link
       rel="stylesheet"
-      href="styles-SPCFEOLH.css"
+      href="styles-4N3S7EGN.css"
       media="print"
       onload="this.media='all'"
     />
-    <noscript><link rel="stylesheet" href="styles-SPCFEOLH.css" /></noscript>
+    <noscript><link rel="stylesheet" href="styles-4N3S7EGN.css" /></noscript>
   </head>
   <body>
     <!--nghm-->
@@ -523,37 +575,37 @@
       ngh="1"
       ng-server-context="ssg"
       ><router-outlet _ngcontent-ng-c3984273398></router-outlet
-      ><app-home _nghost-ng-c3801674482 ngh="0"
+      ><app-home _nghost-ng-c1320505823 ngh="0"
         ><div
-          _ngcontent-ng-c3801674482
+          _ngcontent-ng-c1320505823
           class="min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center"
         >
           <div
-            _ngcontent-ng-c3801674482
+            _ngcontent-ng-c1320505823
             class="mx-auto p-4 grid gap-6 lg:grid-cols-2 lg:gap-12 max-w-screen-xl"
           >
             <div
-              _ngcontent-ng-c3801674482
+              _ngcontent-ng-c1320505823
               class="col-span-full lg:col-span-2 h-1/3"
             >
               <div
-                _ngcontent-ng-c3801674482
+                _ngcontent-ng-c1320505823
                 class="card bg-base-100 w-full shadow-xl"
               >
-                <div _ngcontent-ng-c3801674482 class="card-body">
-                  <h2 _ngcontent-ng-c3801674482 class="card-title">
+                <div _ngcontent-ng-c1320505823 class="card-body">
+                  <h2 _ngcontent-ng-c1320505823 class="card-title">
                     James DiStefano
                   </h2>
-                  <p _ngcontent-ng-c3801674482>
+                  <p _ngcontent-ng-c1320505823>
                     I'm a software engineer with five years of engineering
                     experience, looking for my next role.
                   </p>
                 </div>
               </div>
             </div>
-            <div _ngcontent-ng-c3801674482 class="flex items-stretch">
+            <div _ngcontent-ng-c1320505823 class="flex items-stretch">
               <app-link-card
-                _ngcontent-ng-c3801674482
+                _ngcontent-ng-c1320505823
                 class="flex-1 w-full h-full"
                 _nghost-ng-c609585796
                 ngh="0"
@@ -585,9 +637,9 @@
                 </div></app-link-card
               >
             </div>
-            <div _ngcontent-ng-c3801674482 class="flex items-stretch">
+            <div _ngcontent-ng-c1320505823 class="flex items-stretch">
               <app-link-card
-                _ngcontent-ng-c3801674482
+                _ngcontent-ng-c1320505823
                 class="flex-1 w-full h-full"
                 _nghost-ng-c609585796
                 ngh="0"
@@ -611,7 +663,7 @@
                       <a
                         _ngcontent-ng-c609585796
                         class="btn btn-primary"
-                        href="https://www.linkedin.com/in/james-distefano-b033aa154/"
+                        href="https://github.com/JamesDiStef/about-me"
                         >Track your Reads</a
                       >
                     </div>
@@ -620,11 +672,11 @@
               >
             </div>
             <div
-              _ngcontent-ng-c3801674482
-              class="flex items-stretch lg:col-span-2 space-x-6"
+              _ngcontent-ng-c1320505823
+              class="hidden md:flex md:items-stretch lg:col-span-2 md:space-x-6"
             >
               <app-link-card
-                _ngcontent-ng-c3801674482
+                _ngcontent-ng-c1320505823
                 class="flex-1 w-full h-full"
                 _nghost-ng-c609585796
                 ngh="0"
@@ -651,7 +703,7 @@
                   </div>
                 </div></app-link-card
               ><app-link-card
-                _ngcontent-ng-c3801674482
+                _ngcontent-ng-c1320505823
                 class="flex-1 w-full h-full"
                 _nghost-ng-c609585796
                 ngh="0"
@@ -679,16 +731,31 @@
                 </div></app-link-card
               >
             </div>
+            <div _ngcontent-ng-c1320505823 class="md:hidden w-full">
+              <button
+                _ngcontent-ng-c1320505823
+                href="https://www.linkedin.com/in/james-distefano-b033aa154/"
+                class="my-5 w-full btn btn-secondary"
+              >
+                LinkedIn</button
+              ><button
+                _ngcontent-ng-c1320505823
+                href="'https://github.com/JamesDiStef'"
+                class="w-full btn btn-secondary"
+              >
+                GitHub
+              </button>
+            </div>
           </div>
         </div></app-home
       ><!----></app-root
     >
     <script src="polyfills-FFHMD2TL.js" type="module"></script>
-    <script src="main-I7FWQHDV.js" type="module"></script>
+    <script src="main-B6EIU7ZA.js" type="module"></script>
 
     <script id="ng-state" type="application/json">
       {
-        "__nghData__": [{}, { "c": { "0": [{ "i": "c3801674482", "r": 1 }] } }]
+        "__nghData__": [{}, { "c": { "0": [{ "i": "c1320505823", "r": 1 }] } }]
       }
     </script>
   </body>
