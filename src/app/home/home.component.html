@@ -18,6 +18,7 @@
       <app-link-card
         class="flex-1 w-full h-full"
         [title]="'Mammals of North America'"
+        [buttonText]="'Mammals of North America'"
         [description]="
           'Inspired by a gift my Dad gave me for Christmas, I am creating a database of mammals native to North America. Angular, Express, MongoDB.'
         "
@@ -29,6 +30,7 @@
       <app-link-card
         class="flex-1 w-full h-full"
         [title]="'Track your Reads'"
+        [buttonText]="'Track Your Reads'"
         [description]="
           'Another project I have been working on is a Goodreads clone built in Next.js. It’s not very far along, but you can check it out here.'
         "
@@ -39,31 +41,35 @@
     <div class="hidden md:flex md:items-stretch lg:col-span-2 md:space-x-6">
       <app-link-card
         class="flex-1 w-full h-full"
-        [title]="'Let\'s Connect on LinkedIn'"
+        [title]="'Let\'s Connect on LinkedIn to discuss what\'s next'"
+        [buttonText]="'LinkedIn'"
         [link]="'https://www.linkedin.com/in/james-distefano-b033aa154/'"
       ></app-link-card>
 
       <app-link-card
         class="flex-1 w-full h-full"
-        [title]="'Check out my GitHub'"
+        [title]="'Check out my GitHub to see what I\'ve been working on'"
+        [buttonText]="'GitHub'"
         [link]="'https://github.com/JamesDiStef'"
       ></app-link-card>
     </div>
 
     <div class="md:hidden w-full">
-      <button
+      <a
         href="https://www.linkedin.com/in/james-distefano-b033aa154/"
+        target="_blank"
         class="my-5 w-full btn btn-secondary"
       >
         LinkedIn
-      </button>
+      </a>
 
-      <button
-        href="'https://github.com/JamesDiStef'"
+      <a
+        href="https://github.com/JamesDiStef"
+        target="_blank"
         class="w-full btn btn-secondary"
       >
         GitHub
-      </button>
+      </a>
     </div>
   </div>
 </div>
