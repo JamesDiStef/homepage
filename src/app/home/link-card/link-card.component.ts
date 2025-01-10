@@ -11,5 +11,6 @@ export class LinkCardComponent {
   @Input()
   title!: string;
   @Input() description!: string;
+  @Input() buttonText!: string;
   @Input() link!: string;
 }
