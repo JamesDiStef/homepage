@@ -1,8 +1,10 @@
 <div
   class="min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center"
 >
-  <div class="mx-auto p-4 grid gap-6 lg:grid-cols-2 lg:gap-12 max-w-screen-xl">
-    <div class="col-span-full lg:col-span-2 h-1/3">
+  <div
+    class="items-stretch mx-auto p-4 grid gap-6 lg:grid-cols-3 lg:gap-12 max-w-screen-xl"
+  >
+    <div class="col-span-full lg:col-span-3 h-1/3">
       <div class="card bg-base-100 w-full shadow-xl">
         <div class="card-body">
           <h2 class="card-title">James DiStefano</h2>
@@ -34,11 +36,23 @@
         [description]="
           'Another project I have been working on is a Goodreads clone built in Next.js. It’s not very far along, but you can check it out here.'
         "
-        [link]="'https://github.com/JamesDiStef/about-me'"
+        [link]="'https://github.com/JamesDiStef/reader'"
       ></app-link-card>
     </div>
 
-    <div class="hidden md:flex md:items-stretch lg:col-span-2 md:space-x-6">
+    <div class="flex items-stretch h-full">
+      <app-link-card
+        class="flex-1 w-full h-full"
+        [title]="'To Do List'"
+        [buttonText]="'To Do List'"
+        [description]="
+          'My work experience has mostly been in Angular, so I\'ve been inspired to show off my React chops.  Here\'s my take on the classic project'
+        "
+        [link]="'https://todolistical.netlify.app/'"
+      ></app-link-card>
+    </div>
+
+    <div class="hidden md:flex md:items-stretch lg:col-span-3 md:space-x-6">
       <app-link-card
         class="flex-1 w-full h-full"
         [title]="'Let\'s Connect on LinkedIn to discuss what\'s next'"
