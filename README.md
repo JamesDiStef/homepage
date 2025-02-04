@@ -1,3 +1,5 @@
+This is an Angular app I made to be the home page of my personal website
+
 # Homepage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
