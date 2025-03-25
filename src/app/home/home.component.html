@@ -1,3 +1,17 @@
+<div class="hidden md:flex navbar bg-base-100 shadow-sm">
+  <a
+    href="https://www.linkedin.com/in/james-distefano-b033aa154/"
+    target="_blank"
+    class="btn btn-ghost text-xl"
+    >LinkedIn</a
+  >
+  <a
+    href="https://github.com/JamesDiStef"
+    target="_blank"
+    class="btn btn-ghost text-xl"
+    >GitHub</a
+  >
+</div>
 <div
   class="min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center"
 >
@@ -5,7 +19,7 @@
     class="items-stretch mx-auto p-4 grid gap-6 lg:grid-cols-3 lg:gap-12 max-w-screen-xl"
   >
     <div class="col-span-full lg:col-span-3 h-1/3">
-      <div class="card bg-base-100 w-full shadow-xl">
+      <div class="card bg-base-100 w-full shadow-xl lg:text-xl">
         <div class="card-body">
           <h2 class="card-title">James DiStefano</h2>
           <p>
@@ -24,11 +38,11 @@
       <app-link-card
         class="flex-1 w-full h-full"
         [title]="'Track your Reads'"
-        [buttonText]="'Track Your Reads'"
         [description]="
-          'Goodreads clone built with NextJS.  Typescript, Tailwind, Hosted on Vercel.  This one has been the most fun.'
+          'Goodreads clone built with NextJS.  Typescript, Tailwind, Hosted on Vercel.'
         "
         [link]="'https://reader-teal-pi.vercel.app/'"
+        [codeButtonLink]="'https://github.com/JamesDiStef/reader'"
       ></app-link-card>
     </div>
 
@@ -36,39 +50,27 @@
       <app-link-card
         class="flex-1 w-full h-full"
         [title]="'Board Games'"
-        [buttonText]="'Board Games'"
         [description]="
-          'Currently using Vite and Netlify, I\'m considering moving this one to Next and Vercel as well'
+          'React, Redux, Vite.  Hosted on Netlify.  API layer - Express, firebase, mongoDB '
         "
         [link]="'https://board-games-and-more.netlify.app/'"
+        [codeButtonText]="'See the frontend code'"
+        [codeButtonLink]="'https://github.com/JamesDiStef/board-games'"
+        [backendCodeButtonLink]="
+          'https://github.com/JamesDiStef/board-games-service'
+        "
       ></app-link-card>
     </div>
 
-    <div class="flex items-stretch">
+    <div class="hidden md:flex items-stretch">
       <app-link-card
         class="flex-1 w-full h-full"
         [title]="'Mammals of North America'"
-        [buttonText]="'Mammals of North America'"
-        [description]="
-          'Fun facts about mammals native to North America. Angular, Express, MongoDB.  I\'ve been really into Next lately, so this one has not been getting as much attention'
-        "
+        [description]="'Angular, Express, MongoDB.'"
+        [codeButtonText]="'See the frontend code'"
         [link]="'https://rococo-lokum-be94cf.netlify.app/'"
-      ></app-link-card>
-    </div>
-
-    <div class="hidden md:flex md:items-stretch lg:col-span-3 md:space-x-6">
-      <app-link-card
-        class="flex-1 w-full h-full"
-        [title]="'Let\'s Connect on LinkedIn to discuss what\'s next'"
-        [buttonText]="'LinkedIn'"
-        [link]="'https://www.linkedin.com/in/james-distefano-b033aa154/'"
-      ></app-link-card>
-
-      <app-link-card
-        class="flex-1 w-full h-full"
-        [title]="'Check out my GitHub to see what I\'ve been working on'"
-        [buttonText]="'GitHub'"
-        [link]="'https://github.com/JamesDiStef'"
+        [codeButtonLink]="'https://github.com/JamesDiStef/mammals'"
+        [backendCodeButtonLink]="''"
       ></app-link-card>
     </div>
 

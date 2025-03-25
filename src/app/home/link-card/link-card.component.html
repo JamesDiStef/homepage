@@ -2,10 +2,30 @@
   <div class="card-body">
     <h2 class="card-title">{{ title }}</h2>
     <p>{{ description }}</p>
-    <div class="card-actions justify-center mt-4">
-      <a href="{{ link }}" target="_blank" class="btn btn-primary">{{
-        buttonText
-      }}</a>
+    <div class="card-actions flex flex-col justify-between mt-4 space-y-4">
+      <a
+        href="{{ link }}"
+        target="_blank"
+        class="btn w-full h-12 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:from-indigo-600 hover:to-purple-600"
+      >
+        {{ buttonText }}
+      </a>
+      <a
+        href="{{ codeButtonLink }}"
+        target="_blank"
+        class="btn w-full h-12 bg-gradient-to-r from-green-400 to-teal-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:from-green-500 hover:to-teal-600"
+      >
+        {{ codeButtonText }}
+      </a>
+      @if(backendCodeButtonLink !== ''){<a
+        href="{{ backendCodeButtonLink }}"
+        target="_blank"
+        class="btn w-full h-12 bg-gradient-to-r from-yellow-400 to-red-500 text-white font-semibold rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:from-yellow-500 hover:to-red-600"
+      >
+        {{ backendCodeButtonText }} </a
+      >} @else {
+      <div class="h-6"></div>
+      }
     </div>
   </div>
 </div>

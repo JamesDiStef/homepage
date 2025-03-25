@@ -1,29 +1,7 @@
 This is an Angular app I made to be the home page of my personal website
 
-# Homepage
+It's pretty simple - main functionalty is just to link to other apps I'm builidng, and to my LinkedIn and GitHub
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+One thing that's pretty interesting - if you look in the console you'll see an error and redirect to 404.  That's on purpose.  Chceck it out:  https://v17.angular.io/guide/deployment
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To run this page, you can just pull it, run npm install, then npm run start
