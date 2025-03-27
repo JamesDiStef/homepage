@@ -22,14 +22,8 @@
       <div class="card bg-base-100 w-full shadow-xl lg:text-xl">
         <div class="card-body">
           <h2 class="card-title">James DiStefano</h2>
-          <p>
-            I'm a software engineer with five years of engineering experience,
-            looking for my next role.
-          </p>
-          <p>
-            React, Angular, NextJS, Java, and SQL. I love learning, building,
-            and working on a team.
-          </p>
+          <p>I'm a software engineer with five years of experience.</p>
+          <p>React, Angular, NextJS, Java, and SQL.</p>
         </div>
       </div>
     </div>
@@ -62,15 +56,19 @@
       ></app-link-card>
     </div>
 
-    <div class="hidden md:flex items-stretch">
+    <div class="flex items-stretch">
       <app-link-card
         class="flex-1 w-full h-full"
         [title]="'Mammals of North America'"
-        [description]="'Angular, Express, MongoDB.'"
+        [description]="
+          'Angular, Java Spring, MongoDB.  Hosted on Netlify and Heroku'
+        "
         [codeButtonText]="'See the frontend code'"
         [link]="'https://rococo-lokum-be94cf.netlify.app/'"
         [codeButtonLink]="'https://github.com/JamesDiStef/mammals'"
-        [backendCodeButtonLink]="''"
+        [backendCodeButtonLink]="
+          'https://github.com/JamesDiStef/animals-service/tree/master'
+        "
       ></app-link-card>
     </div>
 
