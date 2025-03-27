@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:homepage": "node dist/homepage/server/server.mjs"
+    "serve:ssr:homepage": "node dist/homepage/server/server.mjs",
+    "deploy": "ng build --output-path docs --base-href /homepage/"
   },
   "private": true,
   "dependencies": {
